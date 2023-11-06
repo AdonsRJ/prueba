@@ -22,7 +22,7 @@ app.get('/',(req,res)=>{
    });
 })
 
-app.get('/pastor_aleman',(req,res)=>{ //en esta s lineas van las rutas 
+app.get('/trailers',(req,res)=>{ //en esta s lineas van las rutas 
   res.render('trailers',{
     nombre: 'Aonis Rodríguez',
     titulo: 'curso node'
