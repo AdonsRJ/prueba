@@ -17,32 +17,23 @@ app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
    res.render('home',{  //los nombres que van aqui son del .hbs
-    nombre: 'Henry Quenun',
+    nombre: 'Aonis Rodríguez',
     titulo: 'curso node'
    });
 })
 
 app.get('/pastor_aleman',(req,res)=>{ //en esta s lineas van las rutas 
-  res.render('pastor_aleman',{
-    nombre: 'Henry Quenun',
+  res.render('trailers',{
+    nombre: 'Aonis Rodríguez',
     titulo: 'curso node'
    });
 })
 
 //para servir en la ruta localhost:8080/hola-mundo
 //app get para habilitar rutas
-app.get('/chihuahua',(req,res)=>{
-    res.render('chihuahua',{
-    nombre: 'Henry Quenun',
-    titulo: 'curso node'
-   });
-})
-
-
-
-app.get('/*',(req,res)=>{
-    res.render('404',{
-    nombre: 'Henry Quenun',
+app.get('/panels',(req,res)=>{
+    res.render('panels',{
+    nombre: 'Aonis Rodríguez',
     titulo: 'curso node'
    });
 })
